@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="basculaBtV1XF.MainPage">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="LightGray">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bascula" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+
+        <StackLayout
+                Orientation="Vertical" VerticalOptions="FillAndExpand"
+                >
+            <Label Text="Control de lecturas de la bascula por medio de conexion bluetoot." FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="-Conectate a la bascula!" FontSize="16" Padding="30,0,30,0"/>
+
+
+        </StackLayout>
+        <Frame BackgroundColor="Linen" HasShadow="False" CornerRadius="0" >
+            <Label FontSize="56" HorizontalTextAlignment="Center" TextColor="#2196F3"  Padding="30,24,30,0" HorizontalOptions="CenterAndExpand" >
+                <Label.FormattedText>
+                    <FormattedString >
+                        <FormattedString.Spans>
+                            <Span Text="0.000"/>
+                            <Span Text="kg" FontSize="Micro"  />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
